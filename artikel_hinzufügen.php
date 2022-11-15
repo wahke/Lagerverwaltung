@@ -42,7 +42,7 @@ include('config/config.php');
 <table>
   <tr>
     <td>Barcode eintragen : </th>
-    <td><input name="barcode" value="A-00"></th>
+    <td><input name="barcode" value="A-00" maxlength="9"></th>
   </tr>
   <tr>
     <td>Artikel : </td>
@@ -84,7 +84,7 @@ include('config/config.php');
   </tr>
   <tr>
     <td>Aktuelle Lagerbestand : </td>
-    <td><input name="lagerbestand"></td>
+    <td><input name="lagerbestand" type="number" min="0" max="9999" step="1" value="1"></td>
   </tr>
   <tr>
     <td>Kategorie : </td>

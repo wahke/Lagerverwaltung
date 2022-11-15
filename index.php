@@ -35,6 +35,7 @@ echo "<table border='1' cellpadding='5'>
 	  <th>Kategorie</th>
 	  <th>Bereich</th>
 	  <th>Material</th>
+	  <th>Edikette Drucken</th>
       </tr>";
 echo "<form method='post'>";
 while($dsatz = mysqli_fetch_assoc($result)){
@@ -53,8 +54,9 @@ while($dsatz = mysqli_fetch_assoc($result)){
          "<td>" . $dsatz["einheit"] . "</td>" .
 		 "<td>" . $dsatz["kategorie"] . "</td>" .
 		 "<td>" . $dsatz["bereich"] . "</td>" .
-         "<td>" . $dsatz["material"] .
-         "</tr>";
+         "<td>" . $dsatz["material"] . "</td>" ;
+	echo   '<td><img src="icons/drucken.png" ></img></td>';   
+     echo   "</tr>";
 }
 
 echo "<table>";
