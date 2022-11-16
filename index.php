@@ -1,15 +1,24 @@
-<!DOCTYPE html><html lang="de"><head></head><body>
-
-
+<!DOCTYPE html><html lang="de">
+<head>
+<meta charset="utf-8">
+<title>Lagerverwaltung v.16.11.2022 - Home</title>
+<link href="./css/style.css" rel="stylesheet">
+</head>
+<body>
 <?php session_start(); /* Starts the session */
 
 if(!isset($_SESSION['UserData']['Username'])){
         header("location:login.php");
         exit;
 }
-?>
-<h1>Material Liste: </h1>
 
+header("Refresh:10");
+?>
+
+<h1><p>Material Liste:</p></h1>
+<br>
+
+<br>
 <?php
 
 //Laden der MYSQL Config + Verbindung Herstellen
@@ -70,21 +79,16 @@ echo "<table>";
 <h2>Aktionen:</h2>
 
 <p>
-<input type="submit" name="eintragen" formaction="artikel_hinzufügen.php" value="Neuer Artikel eintragen">
+<input type="submit" name="eintragen" formaction="artikel_hinzufügen.php" value="Neuer Artikel eintragen">  |  <input type="submit" name="bearbeiten" formaction="artikel_bearbeiten.php" value="ausgewählten Datensatz bearbeiten">  |  <input type="submit" name="löschen" formaction="artikel_löschen.php" value="ausgewählte Datensätze löschen">  |  <input type="submit" name="suchen" formaction="suche.php" value="Artikel suchen">
 </p>
-<p>
-<input type="submit" name="bearbeiten" formaction="artikel_bearbeiten.php" value="ausgewählten Datensatz bearbeiten">
-</p>
-<p>
-<input type="submit" name="löschen" formaction="artikel_löschen.php" value="ausgewählte Datensätze löschen">
-</p>
-<p>
-<input type="submit" name="suchen" formaction="suche.php" value="Artikel suchen">
-</p>
+
 <p>
 <input type="submit" name="logout" formaction="logout.php" value="Logout">
 </p>
 </form>
+<p align="right"> <?php
 
+echo date('H:i:s Y-m-d');
+?></p>
 </body></html>
 

@@ -1,6 +1,11 @@
 <!DOCTYPE html><html lang="de"><head>
-<meta charset="UTF-8">
-<title>Neuer Artikel eintragen</title>
+
+<head>
+<meta charset="utf-8">
+<title>Lagerverwaltung v.16.11.2022 - Neuer Artikel eintragen</title>
+<link href="./css/style.css" rel="stylesheet">
+</head>
+
 <?php
     if(isset($_POST["neuerartikel"])){
 
@@ -122,6 +127,6 @@ include('config/config.php');
 
 </form>
 
-<a href="index.php">Zurück zur Übersicht</a>
+<input type=button onClick="parent.location='index.php'" value='Zurück'>
 
 </body></html>

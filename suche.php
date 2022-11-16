@@ -1,9 +1,14 @@
 <?php
     error_reporting(0);
 ?>
-<html><head><meta charset="UTF-8"></head><body>
-
-
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>Lagerverwaltung v.16.11.2022 - Artikel Suchen</title>
+<link href="./css/style.css" rel="stylesheet">
+</head>
+<body>
 
 
 <h1>Artikelsuche:</h1>
@@ -46,7 +51,10 @@ while($dsatz = mysqli_fetch_assoc($result)) {
 mysqli_close($connect);
 
 ?>
-
 <br>
-<a href="index.php">Zurück zur Übersicht</a>
+<!--<p>
+<input type="submit" name="bearbeiten" formaction="artikel_bearbeiten.php" value="ausgewählten Datensatz bearbeiten">
+</p>-->
+<br>
+<input type=button onClick="parent.location='index.php'" value='Zurück'>
 </body></html>

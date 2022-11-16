@@ -1,5 +1,11 @@
-<!DOCTYPE html><html lang="de"><head></head><body>
-
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>Lagerverwaltung v.16.11.2022 - Artikel bearbeiten</title>
+<link href="./css/style.css" rel="stylesheet">
+</head>
+<body>
 <h1>Ausgewählten Datensatz bearbeiten</h1>
 
 <?php
@@ -60,13 +66,13 @@ if(isset($_POST["auswahl"])){
   </tr>";
 
     echo "<tr>
-    <td>lagerbestand : </td>
+    <td>Lagerbestand : </td>
     <td><input name='lagerbestand' value='$lagerbestand'></td></tr>";
 	echo "</table>";
-    echo "<input name='bearbeitungAbschicken' value='Bearbeitung abschließen' type='submit'>";
+    echo "<br><input name='bearbeitungAbschicken' value='Bearbeitung abschließen' type='submit'>";
     echo "</form>";
 
-    echo "<a href='index.php'>zurück zur Übersicht</a>";
+    echo "<br><input type=button onClick=\"parent.location='index.php'\" value='Zurück'>";
 }
 
 
@@ -100,14 +106,14 @@ WHERE id = $id";
 //MySQL-Anweisung ausführen
     mysqli_query($connect, $update);
 
-    echo "Datensatz bearbeitet.<br>";
-    echo "<a href='index.php'>zurück zur Übersicht</a>";
+    echo "Datensatz bearbeitet.<br><br>";
+    echo "<input type=button onClick=\"parent.location='index.php'\" value='Zurück'>";
 }
 
 //Wenn der Nutzer in buecher.php keine Auswahl getroffen hat:
 if(!isset($_POST["auswahl"]) && !isset($_POST["bearbeitungAbschicken"])){
-    echo "Es wurde kein Datensatz ausgewählt.<br>";
-    echo "<a href='index.php'>zurück zur Übersicht</a>";
+    echo "Es wurde kein Datensatz ausgewählt.<br><br>";
+    echo "<input type=button onClick=\"parent.location='index.php'\" value='Zurück'>";
 }
 
 ?>
