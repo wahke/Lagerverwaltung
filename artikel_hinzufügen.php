@@ -92,6 +92,20 @@ include('config/config.php');
 	    <option value="Bohrer">Bohrer</option>
 	    <option value="Gewindeschneider">Gewindeschneider</option>
 		<option value="Gewindestange">Gewindestange</option>
+		<option value="Lötgas">Lötgas</option>
+		<option value="Lötzinn">Lötzinn</option>
+		<option value="Reiniger">Reiniger</option>
+		<option value="Schmiermittel">Schmiermittel</option>
+		<option value="Schmiernippel">Schmiernippel</option>
+		<option value="Sechskantmutter">Sechskantmutter</option>
+		<option value="Silikon">Silikon</option>
+		<option value="PU-Schaum">PU-Schaum</option>
+		<option value="Sechskantmutter">Sechskantmutter</option>
+		<option value="Sechskantmutter">Sechskantmutter</option>
+		<option value="Sechskantmutter">Sechskantmutter</option>
+		<option value="Sechskantmutter">Sechskantmutter</option>
+		<option value="Sechskantmutter">Sechskantmutter</option>
+		<option value="Zubehör">Zubehör</option>
 	   </select></td>
   </tr>
   <tr>
