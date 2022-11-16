@@ -36,14 +36,10 @@ echo  "<h1>Auflistung des Artikels</h1>";
 while($dsatz = mysqli_fetch_assoc($result)) {
 	
 	echo "<table>";
-	echo "<tr><td>Name des Artikels:</td><td><b>" . $dsatz["artikel"] . "</b></td>
-  </tr>";
-	echo"  <tr>
-    <td>Wo liegt der Artikel : </td><td>" . $dsatz["lagerplatz"] . "</td>
-  </tr>";
-
-   echo "<tr><td>Es gibt noch </td><td>" . $dsatz["lagerbestand"] . " "  . $dsatz["einheit"] . "</td><tr>" ;
-   echo "<table>";
+	echo "<tr><td>Name des Artikels:</td><td><b>" . $dsatz["artikel"] . "</b></td>  </tr>";
+    echo "<tr><td>Wo liegt der Artikel:</td><td>" . $dsatz["lager_schrank"] . " - " . $dsatz["lagerplatz"] .  "</td></tr>";
+    echo "<tr><td>Es gibt noch </td><td>" . $dsatz["lagerbestand"] . " "  . $dsatz["einheit"] . "</td><tr>" ;
+    echo "<table>";
 }
 
 // Verbindung trennen:
