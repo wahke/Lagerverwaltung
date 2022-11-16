@@ -27,7 +27,7 @@ if(isset($_POST["auswahl"])){
     // 5. Das Bearbeiten-Formular anzeigen
     echo "<form action='artikel_bearbeiten.php' method='post'>";
     echo "<input name='id' type='hidden' value='$id'>";
-		echo "<table>";
+	echo "<table>";
 	echo "<tr><td>Name des Artikels:</td><td><b>" . $dsatz["artikel"] . "</b></td>
   </tr>";
 
