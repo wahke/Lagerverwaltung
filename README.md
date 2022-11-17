@@ -1,2 +1,2 @@
 # Lagerverwaltung
-A Simpel PHP Webiste for Lagerverwaltung
+A Simpel PHP Website for Lagerverwaltung
