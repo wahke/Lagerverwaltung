@@ -1,6 +1,6 @@
 <?php
 $host_name = 'localhost';
-$user_name = 'wahke';
+$user_name = '';
 $password = '';
 $database = 'lagerverwaltung';
 

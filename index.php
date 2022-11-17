@@ -44,7 +44,7 @@ echo "<table border='1' cellpadding='5'>
 	  <th>Kategorie</th>
 	  <th>Bereich</th>
 	  <th>Material</th>
-	  <th>Edikette Drucken</th>
+	  <th>Etikette Drucken</th>
       </tr>";
 echo "<form method='post'>";
 while($dsatz = mysqli_fetch_assoc($result)){
@@ -64,7 +64,7 @@ while($dsatz = mysqli_fetch_assoc($result)){
 		 "<td>" . $dsatz["kategorie"] . "</td>" .
 		 "<td>" . $dsatz["bereich"] . "</td>" .
          "<td>" . $dsatz["material"] . "</td>" ;
-	echo   '<td><a href="index.php?print=id#" target="_blank" onclick="window.open(this.href,this.target,\'width=640,height=480´\'); return false;"><img src="icons/drucken.png" ></img></a></td>';   
+	echo   '<td><a href="index.php?print=$id" target="_blank" onclick="window.open(this.href,this.target,\'width=640,height=480´\'); return false;"><img src="icons/drucken.png" ></img></a></td>';   
      echo   "</tr>";
 }
 

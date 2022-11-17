@@ -3,7 +3,7 @@
 	/* Check Login form submitted */	
 	if(isset($_POST['Submit'])){
 		/* Define username and associated password array */
-		$logins = array('wahke' => '1234');
+		$logins = array('admin' => 'admin');
 		
 		/* Check and assign submitted Username and Password to new variable */
 		$Username = isset($_POST['Username']) ? $_POST['Username'] : '';
