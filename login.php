@@ -3,7 +3,7 @@
 	/* Check Login form submitted */	
 	if(isset($_POST['Submit'])){
 		/* Define username and associated password array */
-		$logins = array('admin' => 'admin');
+		$logins = array('wahke' => '1234','test' => '123456');
 		
 		/* Check and assign submitted Username and Password to new variable */
 		$Username = isset($_POST['Username']) ? $_POST['Username'] : '';
@@ -20,12 +20,15 @@
 			$msg="<span style='color:red'>Invalid Login Details</span>";
 		}
 	}
+//Laden der MYSQL Config + Verbindung Herstellen
+include('config/config.php');
+
 ?>
 <!doctype html>
 <html>
 <head>
 <meta charset="utf-8">
-<title>Lagerverwaltung v.16.11.2022</title>
+<title>Lagerverwaltung v.<?php echo $version; ?> - Login</title>
 <link href="./css/style.css" rel="stylesheet">
 </head>
 <body>

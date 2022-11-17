@@ -1,8 +1,13 @@
+<?php
+//Laden der MYSQL Config + Verbindung Herstellen
+include('config/config.php');
+
+?>
 <!DOCTYPE html>
 <html lang="de">
 <head>
 <meta charset="utf-8">
-<title>Lagerverwaltung v.16.11.2022 - Artikel bearbeiten</title>
+<title>Lagerverwaltung v.<?php echo $version; ?> - Artikel bearbeiten</title>
 <link href="./css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -10,8 +15,6 @@
 
 <?php
 
-//Laden der MYSQL Config + Verbindung Herstellen
-include('config/config.php');
 
 
 

@@ -1,16 +1,18 @@
+<?php
+
+//Laden der MYSQL Config + Verbindung Herstellen
+include('config/config.php');
+?>
 <!DOCTYPE html><html lang="de"><head>
 
 <head>
 <meta charset="utf-8">
-<title>Lagerverwaltung v.16.11.2022 - Neuer Artikel eintragen</title>
+<title>Lagerverwaltung v.<?php echo $version; ?> - Artikel hinzufügen</title>
 <link href="./css/style.css" rel="stylesheet">
 </head>
 
 <?php
     if(isset($_POST["neuerartikel"])){
-
-//Laden der MYSQL Config + Verbindung Herstellen
-include('config/config.php');
 
 
 

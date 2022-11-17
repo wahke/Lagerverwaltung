@@ -1,28 +1,28 @@
-<!DOCTYPE html><html lang="de">
-<head>
-<meta charset="utf-8">
-<title>Lagerverwaltung v.16.11.2022 - Home</title>
-<link href="./css/style.css" rel="stylesheet">
-</head>
-<body>
 <?php session_start(); /* Starts the session */
 
 if(!isset($_SESSION['UserData']['Username'])){
         header("location:login.php");
         exit;
 }
+//Laden der MYSQL Config + Verbindung Herstellen
+include('config/config.php');
 
 header("Refresh:10");
 ?>
+
+<!DOCTYPE html><html lang="de">
+<head>
+<meta charset="utf-8">
+<title>Lagerverwaltung v.<?php echo $version; ?> - Home</title>
+<link href="./css/style.css" rel="stylesheet">
+</head>
+<body>
 
 <h1><p>Material Liste:</p></h1>
 <br>
 
 <br>
 <?php
-
-//Laden der MYSQL Config + Verbindung Herstellen
-include('config/config.php');
 
 
 // Anzeige aller Datensätze der Tabelle
