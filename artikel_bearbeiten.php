@@ -67,7 +67,7 @@ if(isset($_POST["auswahl"])){
 
     echo "<tr>
     <td>Lagerbestand : </td>
-    <td><input name='lagerbestand' value='$lagerbestand'></td></tr>";
+    <td><input name='lagerbestand' type='number' min='0' max='9999' step='1' value='1'></td></tr>";
 	echo "</table>";
     echo "<br><input name='bearbeitungAbschicken' value='Bearbeitung abschließen' type='submit'>";
     echo "</form>";
