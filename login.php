@@ -34,7 +34,7 @@ include('config/config.php');
 <body>
 <div id="Frame0">
   <h1>Lagerverwaltung</h1>
-  <p>v.16.11.2022 <a href="https://github.com/wahke/Lagerverwaltung">Lagerverwaltung</a></p>
+  <p>v.<?php echo $version; ?> <a href="https://github.com/wahke/Lagerverwaltung">Lagerverwaltung</a></p>
 </div>
 <br>
 <form action="" method="post" name="Login_Form">
