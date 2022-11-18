@@ -17,11 +17,20 @@ header("Refresh:10");
 <link href="./css/style.css" rel="stylesheet">
 </head>
 <body>
+<!-- Das Eingabeformular: -->
+<h2>Aktionen:</h2>
+
+<p>
+<input type="submit" name="eintragen" formaction="artikel_hinzufügen.php" value="Neuer Artikel eintragen">  |  <input type="submit" name="bearbeiten" formaction="artikel_bearbeiten.php" value="ausgewählten Datensatz bearbeiten">  |  <input type="submit" name="löschen" formaction="artikel_löschen.php" value="ausgewählte Datensätze löschen">  |  <input type="submit" name="suchen" formaction="suche.php" value="Artikel suchen">
+</p>
+
+<p>
+<input type="submit" name="logout" formaction="logout.php" value="Logout">
+</p>
 
 <h1><p>Material Liste:</p></h1>
-<br>
 
-<br>
+
 <?php
 
 
@@ -75,16 +84,7 @@ echo "<table>";
 ?>
 
 
-<!-- Das Eingabeformular: -->
-<h2>Aktionen:</h2>
 
-<p>
-<input type="submit" name="eintragen" formaction="artikel_hinzufügen.php" value="Neuer Artikel eintragen">  |  <input type="submit" name="bearbeiten" formaction="artikel_bearbeiten.php" value="ausgewählten Datensatz bearbeiten">  |  <input type="submit" name="löschen" formaction="artikel_löschen.php" value="ausgewählte Datensätze löschen">  |  <input type="submit" name="suchen" formaction="suche.php" value="Artikel suchen">
-</p>
-
-<p>
-<input type="submit" name="logout" formaction="logout.php" value="Logout">
-</p>
 </form>
 <p align="right"> <?php
 
